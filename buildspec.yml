@@ -14,7 +14,7 @@ phases:
     commands:
       - cd "$CODEBUILD_SRC_DIR"
       - terraform init 
-      - terraform plan
+      - terraform apply -auto-approve
   post_build:
     commands:
       - echo "Terraform completed on `date`"
