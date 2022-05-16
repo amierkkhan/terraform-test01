@@ -5,8 +5,7 @@ resource "aws_eip_association" "eip_assoc" {
 }
 
 resource "aws_instance" "web" {
-  ami               = "ami-079b5e5b3971bd10d"
-  availability_zone = "ap-south-1"
+  ami               = "ami-0756a1c858554433e"
   instance_type     = "t2.micro"
 
   tags = {
